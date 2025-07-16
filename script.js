@@ -84,7 +84,7 @@ function renderMalla() {
 
     ramos.filter(r => r.semestre === sem).forEach(ramo => {
       const boton = document.createElement("button");
-      boton.className = `ramo-button bg-${colores[ramo.area]}`;
+      boton.className = `ramo-button ${colores[ramo.area]}`;
       boton.textContent = ramo.nombre;
       boton.title = `Área: ${ramo.area}\nPrerrequisitos: ${ramo.prereqs.map(id => ramos.find(r => r.id === id)?.nombre).join(", ") || "Ninguno"}`;
       boton.onclick = () => toggleRamo(ramo.id);
