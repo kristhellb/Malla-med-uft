@@ -1,9 +1,52 @@
+/* ===============================
+   🎨 ESTILOS GENERALES DE RAMOS
+   =============================== */
+
+.ramo-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  border-radius: 0.375rem; /* rounded-md */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover con efecto brillante */
+.ramo-button:hover {
+  filter: brightness(90%);
+}
+
+/* ===============================
+   ✅ RAMOS APROBADOS
+   =============================== */
+
 .completed {
   text-decoration: line-through;
   opacity: 0.6;
 }
 
+/* ===============================
+   🔒 RAMOS BLOQUEADOS (sin prerrequisitos cumplidos)
+   =============================== */
+
 .locked {
   opacity: 0.3;
   pointer-events: none;
+}
+
+/* ===============================
+   🎨 COLORES POR ÁREA
+   =============================== */
+
+.bg-basicas {
+  background-color: #fbcfe8; /* rosa pastel */
+}
+
+.bg-clinicas {
+  background-color: #e9d5ff; /* lila pastel */
+}
+
+.bg-formacion {
+  background-color: #bae6fd; /* celeste pastel */
 }
