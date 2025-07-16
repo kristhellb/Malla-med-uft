@@ -63,9 +63,9 @@ const ramos = [
     ];
 
 const colores = {
-  "básicas": "basicas",
-  "clínicas": "clinicas",
-  "formación": "formacion"
+  "básicas": "bg-pink-200",
+  "clínicas": "bg-purple-200",
+  "formación": "bg-blue-200"
 };
 
 const completados = new Set(JSON.parse(localStorage.getItem("ramosCompletados") || "[]"));
