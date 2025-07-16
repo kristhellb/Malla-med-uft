@@ -7,13 +7,13 @@ const ramos = [
   { id: "histologia", nombre: "HISTOLOGÍA", semestre: 3, area: "básicas", prereqs: ["anatomia2", "biocel"] },
   { id: "fisiologia1", nombre: "FISIOLOGÍA I", semestre: 3, area: "básicas", prereqs: ["anatomia2", "biomol"] },
   { id: "neuro", nombre: "NEUROCIENCIAS", semestre: 4, area: "básicas", prereqs: ["fisiologia1", "histologia"] },
-  // Puedes agregar todos los demás ramos aquí, siguiendo este formato...
+  // Puedes seguir agregando el resto de los ramos aquí...
 ];
 
 const colores = {
-  "básicas": "bg-pink-200",
-  "clínicas": "bg-purple-200",
-  "formación": "bg-blue-200"
+  "básicas": "basicas",
+  "clínicas": "clinicas",
+  "formación": "formacion"
 };
 
 const completados = new Set(JSON.parse(localStorage.getItem("ramosCompletados") || "[]"));
@@ -32,7 +32,7 @@ function renderMalla() {
 
     ramos.filter(r => r.semestre === sem).forEach(ramo => {
       const boton = document.createElement("button");
-      boton.className = `block w-full mb-2 p-2 text-left rounded transition hover:brightness-90 ${colores[ramo.area]}`;
+      boton.className = `ramo-button bg-${colores[ramo.area]}`;
       boton.textContent = ramo.nombre;
       boton.title = `Área: ${ramo.area}\nPrerrequisitos: ${ramo.prereqs.map(id => ramos.find(r => r.id === id)?.nombre).join(", ") || "Ninguno"}`;
       boton.onclick = () => toggleRamo(ramo.id);
@@ -61,3 +61,4 @@ function toggleRamo(id) {
 }
 
 renderMalla();
+
