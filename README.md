@@ -4,7 +4,7 @@ Bienvenid@ a tu malla curricular interactiva ✨
 Esta página fue creada para ayudarte a visualizar tu avance en la carrera de **Medicina en la Universidad Finis Terrae** de forma clara, bonita y funcional 🌈
 
 🔗 **Puedes acceder directamente a la malla aquí:**  
-👉 [https://TU_USUARIO.github.io/NOMBRE_DEL_REPOSITORIO](https://TU_USUARIO.github.io/NOMBRE_DEL_REPOSITORIO)
+👉 [https://kristhellb.github.io/Malla-med-uft](https://kristhellb.github.io/Malla-med-uft)
 
 ---
 
@@ -24,20 +24,5 @@ Esta página fue creada para ayudarte a visualizar tu avance en la carrera de **
 
 ---
 
-## 🛠️ Tecnologías utilizadas
-
-- HTML5
-- TailwindCSS (vía CDN)
-- JavaScript (vanilla)
-
----
-
-## 🚀 Cómo se construyó
-
-Este proyecto fue creado para ser ligero, rápido y 100% compatible con GitHub Pages. Solo necesitas el archivo `index.html` para que funcione correctamente.
-
----
-
-💖 Hecho con amor y pastelitos para todos los estudiantes de Medicina 🩷  
 _Disfruta tu avance académico visualmente como se merece._
 
